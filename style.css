@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(234, 192, 39);
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    color: white;
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+/* ------------------------navbar start----------------- */
+nav {
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(11, 98, 91);
+    cursor: pointer;
+}
+
+/* ------------------------navbar end----------------- */
+section {
+    background-color: rgb(67, 145, 138);
+}
+
+/* banner start */
+.banner {
+    background-image: url(./images/boookss.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+
+}
+
+/* banner end */
+/* book start */
+.row,
+.row1 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.col-3 {
+    width: 220px;
+    height: 290px;
+    background-color: rgb(243, 239, 210);
+    border: 2px solid rgb(240, 235, 239);
+    box-shadow: 0px 0px 3px 3px rgb(31, 63, 63);
+    border-radius: 2px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h4 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#btn {
+    margin-top: 5px;
+    margin-left: 80px;
+    background-color: rgb(116, 152, 130);
+    color: beige;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 6px;
+
+}
+
+#btn:hover {
+    background-color: antiquewhite;
+    color: rgb(40, 39, 39);
+}
+
+img {
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+/* -book end */
+/* -------------------------------------About Start----------------------- */
+#about {
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px;
+    border: 1px solid rgb(65, 148, 141);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h6 {
+    font-size: medium;
+    text-align: justify;
+    color: rgb(65, 148, 141);
+}
+
+#abt {
+    text-align: justify;
+    color: rgb(65, 148, 141);
+}
+
+/* -------------------------------About End------------------------------------ */
+/* ----footer start */
+footer {
+    background-color: rgb(234, 192, 39);
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+
+#footerdiv {
+    color: beige;
+    text-align: center;
+}
+span{
+    color: rgb(11, 112, 104);
+    cursor: pointer;
+}
+/* ----footer end */
+/* --------------------------------------------media query--------------------- */
+@media screen and (max-width:600px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .row,
+    .row1 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-3 {
+        margin-top: 15px;
+    }
+
+    #about {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 8px;
+    }
+}
